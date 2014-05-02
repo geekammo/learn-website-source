@@ -1,0 +1,65 @@
+<nav>
+	<div id="nav-l">
+	</div>
+	<div id="nav-c">
+		<ul id="nav-list" style="width: 700px;">
+			<li id="home"><a href="{{ HOME_PATH }}">Home</a></li>
+			{% assign pages_list = site.pages %}
+			{% assign group = 'navigation' %}
+			{% for node in pages_list %}
+				{% if node.title != null %}
+                {% if node.title != "Search" %}
+				  {% if group == null or group == node.group %}
+					{% if page.url == node.url %}
+					<li  id = "{{node.title}}" class="active">
+					<span class="nav-l-active"></span>
+					<a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a>
+					<span class="nav-r-active"></span>
+					</li>
+					{% else %}
+					<li id = "{{node.title}}"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				  {% endif %}
+				{% endif %}
+                {% endif %}
+			 {% endfor %}
+			{% assign pages_list = nil %}
+			{% assign group = nil %}
+		</ul>
+        
+		<form action="/search.html" id="nav-search" method="GET">
+			<div id="search-right-pix">
+				<div id="search-left-pix">
+					<div id="search-center-pix">
+						<div id="search-icon-pix"></div>
+						<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
+					</div>
+				</div>
+			</div>
+		</form>
+
+    </div>		
+
+	<div id="nav-r">
+	</div>
+</nav>
+
+<div>
+
+<section id="search-results" style="display: none;">
+    <h1>Search results</h1>
+    <div class="entries">
+    </div>
+</section>
+
+{% raw %}
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <big><a href="{{url}}">{{title}}</a></big>
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}
+</div>
