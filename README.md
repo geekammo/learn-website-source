@@ -1,9 +1,9 @@
 # MicroView Learn 
 
 The MicroView Learn website is generated using Jekyll.  The following open source projects are required to build 
-* Jekyll-Bootstrap
-* [Jekyll Lunr JS Search] https://github.com/slashdotdash/jekyll-lunr-js-search
-* [Simpleyyt Theme by Yitao] https://github.com/Simpleyyt/simpleyyt.github.io
+* [Jekyll-Bootstrap] (http://jekyllbootstrap.com)
+* [Jekyll Lunr JS Search] (https://github.com/slashdotdash/jekyll-lunr-js-search)
+* [Simpleyyt Theme by Yitao] (https://github.com/Simpleyyt/simpleyyt.github.io)
 
 Please feel free to submit pull request for corrections, updates and bug fixes. We appreciate community contributions.
 
