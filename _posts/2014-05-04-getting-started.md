@@ -7,8 +7,6 @@ tags: [microview, setup, getting-started]
 comments: true
 ---
 
-Test change!
-
 ### Download Arduino Software (IDE) 
 
 In order to get your MicroView up and running you'll need the latest version of the Arduino software available from the Arduino Website. The Arduino software (also known as the Arduino IDE), lets you program you MicroView (and other Arduinos). 
