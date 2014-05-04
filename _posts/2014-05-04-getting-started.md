@@ -7,6 +7,7 @@ tags: [microview, setup, getting-started]
 comments: true
 ---
 
+Test change!
 
 ### Download Arduino Software (IDE) 
 
@@ -34,12 +35,11 @@ Use the MicroView USB programmer or FTDI cable to connect your MicroView to one 
 5. Continue through the installation, and wait for it to finish. Then click ‘Close.’
 
 
-
-
 #### Installing FTDI drivers on Linux
 
 
 ### Identify Your Hardware
 
+Your MicroView and the Arduino UNO are interchangeable but you won’t find the MicroView listed in the Arduino Software. Select “Arduino UNO” instead.
 
 ### Download and install the “MicroView Library”
