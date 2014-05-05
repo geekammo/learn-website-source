@@ -1363,3 +1363,17 @@ a.action-icon.action-solution {
 	background-position:-90px 0;
 	width:14px;
 }
+
+#search-results{
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.entries{
+	padding-top: 20px;
+	margin-left:10px;
+}
+
+article{
+	padding-top:5px;
+}
