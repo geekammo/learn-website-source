@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", "Gemfile" , "Gemfile.lock" , ".rbenv-version", "Rakefile", "changelog.md"]
 pygments: true
 
 markdown: kramdown
@@ -121,3 +121,6 @@ exclude_from_search: true
 
 lunr_search:
     excludes: [rss.xml, atom.xml]
+
+destination: ../learn.microview.io
+
