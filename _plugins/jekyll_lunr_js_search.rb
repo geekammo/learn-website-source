@@ -58,7 +58,7 @@ module Jekyll
       Dir::mkdir(site.dest) unless File.directory?(site.dest)
       
       # File I/O: create search.json file and write out pretty-printed JSON
-      filename = 'search.json'
+      filename = 'search.xml'
       
       File.open(File.join(site.dest, filename), "w") do |file|
         file.write(json)
