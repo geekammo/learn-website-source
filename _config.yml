@@ -29,6 +29,7 @@ links :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
+url:    http://learn.microview.io
 production_url : http://learn.microview.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
@@ -87,7 +88,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : learngeekammo 
+      short_name : learnmicroview 
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
