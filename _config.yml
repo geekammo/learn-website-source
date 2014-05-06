@@ -87,7 +87,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : geekammo 
+      short_name : learngeekammo 
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
