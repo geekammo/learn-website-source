@@ -123,5 +123,5 @@ exclude_from_search: true
 lunr_search:
     excludes: [rss.xml, atom.xml]
 
-destination: ../learn.microview.io
+destination: ../geekammo.github.io
 
