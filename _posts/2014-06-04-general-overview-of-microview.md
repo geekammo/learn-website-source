@@ -11,6 +11,8 @@ comments: true
 
 The MicroView is the first chip-sized Arduino compatible that lets you see what your Arduino is thinking using a built-in OLED display. In the heart of MicroView there is an ATMEL's ATmega328P, 5V & 3.3V LDO and a 64x48 pixel OLED display, together with other passive components that allow the MicroView to operate without any external components other than a power supply.
 
+MicroView is 100% code compatible with Arduino Uno (ATmega328P version), meaning code that runs in Arduino Uno will also be able to run in MicroView as long as the IO pins used in the code is externally exposed in MicroView. 
+
 #Hardware Specifications    
 * Display: 64x48 OLED Display
 * Microcontroller: ATmega328P 
@@ -58,13 +60,17 @@ Based on the above illustration, a pixel turned on at X=2 and Y=3 means BYTE 2 o
 
 Two pixels at X=2,Y=3 and X=2,Y=2 turned on means BYTE 2 of the buffer memory has a data of 0x0c (hex).
 
-To draw a straight line of 5 pixels starting from 10,2 to 10,2 , the following C codes show a simple way on how to accomplish this.
+To draw a straight line of 5 pixels starting from 10,2 to 10,6 , the following C codes show a pixel by pixel way on how to accomplish this:
 
     uView.pixel(10,2);
     uView.pixel(10,3);
     uView.pixel(10,4);
     uView.pixel(10,5);
     uView.pixel(10,6);
+
+but in normal situation, to draw a straight line from 10,5 to 10,6 we just need a single line command:
+
+    uView.line(10,2,10,6);
 
 In order for the library to perform extremely fast draw (more than 100 frames per second), all drawing function in the MicroView's library does not immediately transfer the buffer memory to the SSD1306 controller. A `display()` command is required to instruct the library to perform the bulk transfer from the buffer memory to the SSD1306 controller:
 
