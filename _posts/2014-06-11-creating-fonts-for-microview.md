@@ -104,7 +104,7 @@ Save the image and then proceed to next step. You can also save the hassle by do
 
 #Generating Font Source File from Bitmap
 
-In order to convert the font from bitmap to C char definition, we will be using [LCD Assistant](http://en.radzio.dxp.pl/bitmap_converter) for this job. Run LCD Assistant and load the `12x24Font.bmp` file previously saved.
+In order to convert the font from bitmap to `C char` definition, we will be using [LCD Assistant](http://en.radzio.dxp.pl/bitmap_converter) for this job. Run LCD Assistant and load the `12x24Font.bmp` file previously saved.
 
 ![LCD Assistant](/images/LCD_Assistant.png)
 
