@@ -4,6 +4,7 @@ title: "Creating Fonts for MicroView"
 tagline: by JP Liew
 category: Intro
 description: "Creating Fonts for MicroView"
+thumbnail: /images/Thumbnail_MicroView_8x16_FontMapping.png
 tags: [microview, custom font, fonts, screen buffer, ssd1306, screen memory]
 comments: true
 ---

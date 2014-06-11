@@ -1413,3 +1413,9 @@ article{
     border-width: 33px; 
     margin-left: -33px; 
 }
+
+.thumbnail {
+    margin-top: 6px;
+    margin-right: 10px;
+    float: left;
+}

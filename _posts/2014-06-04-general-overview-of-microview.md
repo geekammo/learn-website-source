@@ -4,6 +4,7 @@ title: "General Overview of MicroView"
 tagline: by JP Liew
 category: Intro
 description: "General Overview of MicroView"
+thumbnail: /images/Thumbnail_MicroView_Hero.png
 tags: [microview, introduction, overview, memory map, ssd1306, screen memory]
 comments: true
 ---
