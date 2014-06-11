@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Started with MicroView"
-category: example
+category: intro 
 description: "Step-by-step instructions for setting up the Arduino software and connecting it to your MicroView."
 tags: [microview, setup, getting-started]
 comments: true

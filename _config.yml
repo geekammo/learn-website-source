@@ -1,6 +1,8 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+# permalink: /:categories/:year/:month/:day/:title 
+
+permalink: /:categories/:title.html
 
 exclude: [".rvmrc", "Gemfile" , "Gemfile.lock" , ".rbenv-version", "Rakefile", "changelog.md"]
 pygments: true
