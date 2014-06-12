@@ -106,7 +106,7 @@ module Jekyll
       paragraphs = doc.search('p').map {|e| e.text }
       lists = doc.search('li').map {|e| e.text }
       code_blocks = doc.search('pre').map {|e| e.text }
-      paragraphs = paragraphs + lists + code_blocks # Marcus's hack to include list elements in the indexing
+      paragraphs = paragraphs + lists + code_blocks # Marcus' hack to include list elements in the indexing
       paragraphs.join(" ").gsub("\r"," ").gsub("\n"," ")
     end
   end
