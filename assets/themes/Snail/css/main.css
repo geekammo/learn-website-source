@@ -1431,27 +1431,26 @@ article{
 
 .info {
     background: url(../img/box_info.png) ;
-    color: #00529B;
-    background-color: #BDE5F8;
+//    color: #00529B;
+//    background-color: #BDE5F8;
 }
-
 
 .warning {
     background: url(../img/box_warning.png);
-    color: #9F6000;
-    background-color: #FEEFB3;
+//    color: #9F6000;
+//    background-color: #FEEFB3;
 }
 
 .success {
     background: url(../img/box_tick.png);
-    color: #4F8A10;
-    background-color: #DFF2BF;
+//    color: #4F8A10;
+//    background-color: #DFF2BF;
 }
 
 .error {
     background: url(../img/box_cross.png);
-    color: #D8000C;
-    background-color: #FFBABA;
+//    color: #D8000C;
+//    background-color: #FFBABA;
 }
 
  
