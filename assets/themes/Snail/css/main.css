@@ -1419,3 +1419,39 @@ article{
     margin-right: 10px;
     float: left;
 }
+
+.info, .warning, .success, .error {
+    font-style: italic;
+    border-radius: 0.5em;
+    margin: 25px 25px 25px 25px !important;
+    padding: 25px 35px 25px 45px !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+}
+
+.info {
+    background: url(../img/box_info.png) ;
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+
+
+.warning {
+    background: url(../img/box_warning.png);
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.success {
+    background: url(../img/box_tick.png);
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+
+.error {
+    background: url(../img/box_cross.png);
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+ 

@@ -12,19 +12,19 @@ comments: true
 
 The MicroView is the first chip-sized Arduino compatible that lets you see what your Arduino is thinking using a built-in OLED display. In the heart of MicroView there is an ATMEL's ATmega328P, 5V & 3.3V LDO and a 64x48 pixel OLED display, together with other passive components that allow the MicroView to operate without any external components other than a power supply.
 
-MicroView is 100% code compatible with Arduino Uno (ATmega328P version), meaning code that runs in Arduino Uno will also be able to run in MicroView as long as the IO pins used in the code is externally exposed in MicroView. 
+<p class="info">MicroView is 100% code compatible with Arduino Uno (ATmega328P version), meaning code that runs in Arduino Uno will also be able to run in MicroView as long as the IO pins used in the code is externally exposed in MicroView.</p> 
 
 #Hardware Specifications    
-* Display: 64x48 OLED Display
-* Microcontroller: ATmega328P 
-* Operating Voltage: 5V
-* Input Voltage: 3.3VDC - 16VDC
-* Digital I/O Pins: 12 (of which 3 provide PWM output)
-* Analog Input Pins: 6
-* Flash Memory: 32 KB
-* SRAM: 2 KB
-* EEPROM: 1 Kilobyte
-* Clock Speed: 16 Mhz
+* Display : 64x48 OLED Display
+* Microcontroller : ATmega328P 
+* Operating Voltage : 5V
+* Input Voltage : 3.3VDC - 16VDC
+* Digital I/O Pins : 12 (of which 3 provide PWM output)
+* Analog Input Pins : 6
+* Flash Memory : 32 KB
+* SRAM : 2 KB
+* EEPROM : 1 Kilobyte
+* Clock Speed : 16 Mhz
 * No other components required
 
 #Pin Configuration

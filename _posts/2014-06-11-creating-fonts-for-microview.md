@@ -52,7 +52,7 @@ With 8x16 font taking up RAM from screen buffer's ROW0 and ROW1, the data of the
     BYTE70 = 0xff
     BYTE71 = 0xff
 
-Manually plotting fonts is a very tedious task, MicroView's library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying a font in MicroView is as simple as:
+<p class="info">Manually plotting fonts and text is a very tedious task, MicroView's library was written to remove the burden of this tedious task from the users with its built-in fonts printing functions. Displaying text in MicroView is as simple as:</p>
 
     uView.print("Hello");
 
@@ -103,6 +103,8 @@ If you want a `WHITE` text on `BLACK` background, you need to `INVERT` the color
 
 Save the image and then proceed to next step. You can also save the hassle by downloading the [12x24Font.bmp](/images/12x24Font.bmp) already prepared by us.
 
+<p class="success">You have now successfully created a customised bitmap font.</p>
+
 #Generating Font Source File from Bitmap
 
 In order to convert the font from bitmap to `C char` definition, we will be using [LCD Assistant](http://en.radzio.dxp.pl/bitmap_converter) for this job. Run LCD Assistant and load the `12x24Font.bmp` file previously saved.
@@ -123,7 +125,7 @@ Once all the option is correctly selected, click File, then save output, type in
 
 Using a text file editor, open `12x24Font.h`
 
-Cut the line
+Locate
 
     const unsigned char 12x24Font [] = {
 
@@ -183,6 +185,8 @@ You should get the following result:
         0xE7, 0xE7, 0xF9, 0xF9, 0xFE, 0xFE, 0xFF, 0xFF, 
     };
     #endif
+
+<p class="success">You have now successfully converted the bitmap font to C header file.</p>
 
 #Adding Font Source File to MicroView Library
 
@@ -251,3 +255,6 @@ Run the following sketch to test your new font:
     
     void loop () {
     }
+
+<p class="success">You have now successfully hacked MicroView's library with your own custom font.</p>
+
