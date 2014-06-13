@@ -43,7 +43,7 @@ The 384 bytes of buffer memory are declared in MicroView's library as
 
 and are arranged in a linear form representing the following 64 x 48 pixels coordinate system.
 
-![MicroView Coordinate System](/images/MicroView_Coordinates.png)
+![MicroView Screen Coordinate System](/images/MicroView_Coordinates.png)
 
 Based on the above illustration, for example, if a user wish to plot a pixel at the position of the black dot, where X=10 and Y=2, user issue the following command:
 
@@ -51,10 +51,10 @@ Based on the above illustration, for example, if a user wish to plot a pixel at 
 
 This command will then calculate the exact location of the buffer memory and set a BIT in the BYTE corresponding to the X,Y position.
 
-![MicroView Memory Map](/images/MicroView_MemoryMap.png)
+![MicroView Screen Memory Map](/images/MicroView_MemoryMap.png)
 _Diagram showing how a linear buffer memory in the ATmega328P aligns with the OLED pixels._
 
-![MicroView Data Bits](/images/MicroView_DataBits.png)
+![MicroView Screen Data Bits](/images/MicroView_DataBits.png)
 _Diagram showing the BITs in a BYTE of the buffer memory corresponding to the OLED's X,Y position._
 
 Based on the above illustration, a pixel turned on at X=2 and Y=3 means BYTE 2 of the buffer memory has a data of 0x08 (hex). 
