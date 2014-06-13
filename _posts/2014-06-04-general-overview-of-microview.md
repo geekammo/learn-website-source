@@ -69,7 +69,7 @@ To draw a straight line of 5 pixels starting from 10,2 to 10,6 , the following C
     uView.pixel(10,5);
     uView.pixel(10,6);
 
-but in normal situation, to draw a straight line from 10,5 to 10,6 we just need a single line command:
+but in normal situation, to draw a straight line from 10,2 to 10,6 we just need a single line command:
 
     uView.line(10,2,10,6);
 
