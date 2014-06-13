@@ -73,7 +73,7 @@ the MicroView library allows you to draw lines by specifying the the start and e
 
     uView.line(10,2,10,6);
 
-In order for the library to perform draws extremely fast (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A `display()` command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:
+In order for the library to perform extremely fast mathematical operations on the screen buffer (more than 100 frames per second), calls to the drawing functions within the MicroView library does not immediately transfer the contents of screen buffer to the SSD1306 controller. A `display()` command is required to instruct the library to perform the bulk transfer from the screen buffer to the SSD1306 controller:
 
     uView.display();
 
