@@ -5,7 +5,7 @@ category: intro
 tagline: by JP Liew
 description: "Step-by-step instructions for setting up the Arduino software and connecting it to your MicroView."
 thumbnail: /images/Thumbnail_MicroView_Getting_Started.png
-tags: [microview, setup, getting-started]
+tags: [microView, setup, getting started, codebender, arduino ide, microview library]
 comments: true
 ---
 In order to get your MicroView up and running, there are four easy steps to follow: 
@@ -15,7 +15,7 @@ In order to get your MicroView up and running, there are four easy steps to foll
 3.  Choose Arduino software
 4.  Write your first sketch
 
-##STEP 1 - Install Drivers
+#STEP 1 - Install Drivers
 MicroView, like the Arduino, relies on a programmer to upload sketches (Arduino code) and also communicate with the computer. This programmer often has a USB to TTL converter chip that creates a Virtual Serial Port on the computer when properly installed.  MicroView's [factory USB Programmer]( https://www.sparkfun.com/products/12924) uses the [FTDI's FT231X](http://www.ftdichip.com/Products/ICs/FT231X.html) to send the sketches to MicroView and also act as a communication medium between MicroView and computer.
 
 Depending on the OS (Operating System) of your computer, the drivers are installed using different methods.  Below are the installation instructions prepared by SparkFun Electronics:
@@ -24,7 +24,7 @@ Depending on the OS (Operating System) of your computer, the drivers are install
 * [How to Install FTDI Drivers for Linux]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/linux)
 * [How to Intall FTDI Drivers for Mac]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac)
 
-##STEP 2 - Prepare MicroView for Programming
+#STEP 2 - Prepare MicroView for Programming
 
 Once you have finished the FTDI Drivers installation, you will need to prepare the MicroView to be inserted into the computer's USB port.
 
@@ -42,13 +42,13 @@ If you have not purchase the factory USB Programmer and have [FTDI Basic Breakou
 
 <p class="success">You have now successfully prepared the MicroView for programming.</p>
 
-##STEP 3 - Choose the Right Arduino Software (IDE)
+#STEP 3 - Choose the Right Arduino Software (IDE)
 
 There are currently two options when selecting the Arduino Sofware (IDE). The first option is to use the cloud based [Codebender](https://codebender.cc) and the second option is to use [Arduino IDE.](http://arduino.cc/en/main/software)
 
 <p class="info">As our Learning Kit's tutorials are based on Codebender, and Codebender has already included MicroView's library in their cloud solution, we highly recommend users to use Codebender for our tutorials.</p>
 
-###Using Codebender
+##Using Codebender
 
 Installing Codebender is really simple, the prerequisite is just Chrome or Firefox browser.  Using Chrome or Firefox, browse to [Codebender's Getting Started page]( https://codebender.cc/static/walkthrough/page/1) and then follow the steps below (shown using Firefox browser).
 
@@ -78,7 +78,7 @@ Click `Restart Now` when you see the message "Codebender.cc Plugin will be insta
 
 <p class="success">You have now successfully installed Codebender on your browser. Please proceed to STEP 4 – Write Your First Sketch</p>
 
-###Install Arduino IDE
+##Install Arduino IDE
 
 Installing Arduino IDE is normally straight forward, however it is still a bit challenging if one has never try before.  Luckily our partner SparkFun have already published step by step guides on:
 
@@ -108,7 +108,7 @@ Click File, Example, and find MicroView Example to confirm the installation.
 
 ![MicroView Library Installed](/images/MicroView_Library_Installed.png)
 
-##STEP 4 - Write Your First Sketch
+#STEP 4 - Write Your First Sketch
 
     #include <MicroView.h>
      

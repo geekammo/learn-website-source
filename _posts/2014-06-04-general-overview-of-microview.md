@@ -5,7 +5,7 @@ tagline: by JP Liew
 category: Intro
 description: "General Overview of MicroView"
 thumbnail: /images/Thumbnail_MicroView_Hero.png
-tags: [microview, introduction, overview, memory map, ssd1306, screen memory]
+tags: [microview, introduction, overview, memory map, ssd1306, screen buffer]
 comments: true
 ---
 ![MicroView Image](/images/MicroView_Hero.jpg)
@@ -33,7 +33,7 @@ The MicroView is the first chip-sized Arduino compatible that lets you see what 
 #OLED Memory Map
 The [SSD1306](http://www.solomon-systech.com/en/product/display-ic/oled-driver-controller/ssd1306/) is the controller built into the MicroView's OLED display. It has flexible yet complex segment and common drivers. One requires vast knowledge on memory addressing in order to use the SSD1306 controller.
 
-MicroView's library was written to hide away the complexities of the SSD1306 controller, so that users can issue simple commands to control the display. Although the SSD1306 has a built-in RAM (memory) for the screen, when connected using the SPI method, the ATmega328P is not able to read the RAM (memory) of the SSD1306. Therefore the software will not be able to manipulate the screen memory to perform mathematical operations.
+MicroView's library was written to hide away the complexities of the SSD1306 controller, so that users can issue simple commands to control the display. Although the SSD1306 has a built-in RAM (memory) for the screen, when connected using the SPI method, the ATmega328P is not able to read the RAM (memory) of the SSD1306. Therefore the software will not be able to manipulate the screen buffer to perform mathematical operations.
 
 MicroView's library overcomes this by allocating 384 bytes ( (64 x 48)/8 bits) of memory from ATmega328P as buffer. The library can now manipulate the screen buffer and then perform a bulk transfer from the ATmega328P's memory to the internal memory of the SSD1306 controller.
 

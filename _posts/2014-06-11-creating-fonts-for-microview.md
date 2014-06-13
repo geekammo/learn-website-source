@@ -5,7 +5,7 @@ tagline: by JP Liew
 category: Font
 description: "Creating Fonts for MicroView"
 thumbnail: /images/Thumbnail_MicroView_8x16_FontMapping.png
-tags: [microview, custom font, fonts, screen buffer, ssd1306, screen memory]
+tags: [microview, custom font, fonts, screen buffer, ssd1306]
 comments: true
 ---
 From the previous article [General Overview of MicroView](/intro/general-overview-of-microview.html), we have covered how the [MicroView library](https://github.com/geekammo/MicroView-Arduino-Library) allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
