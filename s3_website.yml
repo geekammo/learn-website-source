@@ -1,5 +1,5 @@
-s3_id: AKIAJVZNOU3EDY3OMI5A
-s3_secret: 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
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: learn.microview.io.s3-website-ap-southeast-2.amazonaws.com
 cloudfront_distribution_id: E2J5CKD228CXX8
 
