@@ -2,18 +2,18 @@
 layout: post
 title: "Creating Fonts for MicroView"
 tagline: by JP Liew
-category: Font
+category: Font 
 description: "Creating Fonts for MicroView"
 thumbnail: /images/Thumbnail_MicroView_8x16_FontMapping.png
 tags: [microview, custom font, fonts, screen buffer, ssd1306]
 comments: true
 ---
-From the previous article [General Overview of MicroView](/intro/general-overview-of-microview.html), we have covered how the [MicroView library](https://github.com/geekammo/MicroView-Arduino-Library) allocated 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
+From the previous article [General Overview of MicroView](/intro/general-overview-of-microview.html), we have covered how the [MicroView library](https://github.com/geekammo/MicroView-Arduino-Library) allocates 384 bytes of RAM as screen buffer from ATmega328P to perform graphic operations before transferring this block of memory to the SSD1306 OLED controller’s memory.
 The following diagram shows how two 5x8 pixel characters are drawn on the screen buffer.
 
 ![MicroView 5x8 Font Mapping](/images/MicroView_5x8_FontMapping.png)
 
-From the diagram, "O" character appeared on ROW0 took up 5 bytes of RAM from the screen buffer in the following order:
+From the diagram, the "O" character appeared on ROW0, and took up 5 bytes of RAM from the screen buffer in the following order:
 
     BYTE0 = 0x7e
     BYTE1 = 0x81
@@ -33,7 +33,7 @@ A 8x16 font will take up 16 bytes of RAM from the screen buffer as shown in the 
 
 ![MicroView 8x16 Font Mapping](/images/MicroView_8x16_FontMapping.png)
 
-With 8x16 font taking up RAM from screen buffer's ROW0 and ROW1, the data of the above diagram will occupy the screen buffer's BYTE0 – BYTE7 and BYTE64 – BYTE71.
+With the 8x16 font using RAM from screen buffer's ROW0 and ROW1, the data of the above diagram will occupy the screen buffer's BYTE0 – BYTE7 and BYTE64 – BYTE71.
 
     BYTE0 = 0xf8
     BYTE1 = 0xfc
@@ -56,14 +56,14 @@ With 8x16 font taking up RAM from screen buffer's ROW0 and ROW1, the data of the
 
     uView.print("Hello");
 
-Although MicroView's library includes 4 different types of font, these fonts might not suit every user's need.  By following these steps you can make your own fonts and include them within the MicroView library:
+Although MicroView's library includes 4 different types of font, these fonts might not your needs.  By following these steps you can make your own fonts and include them within the MicroView library:
 
 1. Convert fonts to bitmap.
 2. Generate font source file from bitmap.
 3. Add font source file to MicroView library.
 
 #Converting Fonts to Bitmap
-Once we understand how a character is being mapped to the MicroView's screen buffer, we can choose to manually draw the font we like to the screen buffer or we can use a converter to convert computer's font to bitmap and then convert the bitmap into `C char` definition used by the MicroView library.
+Once we understand how a character is being mapped to the MicroView's screen buffer, we can choose to either manually draw a font to the screen buffer or alternatively we can software to convert a computer's font to bitmap and then convert the bitmap into `C char` definition used by the MicroView library.
 
 We have had good results using [Codehead's Bitmap Font Generator](http://www.codehead.co.uk/cbfg) to convert a font into a bitmap. If you have had success in using other tools, please let us know and we'll update this article.
 
@@ -80,9 +80,9 @@ Let's quickly run through a few simple steps to convert a Computer's font into a
 
 ![MicroView Custom Font - Codehead To Much Space](/images/Codehead_To_Much_Space.png)
 
-From the generated result, it is clear that there is too much space on the left of the numbers and the glyphs are not taking full advantage of the 12x48 cells.
+From the generated result, it is clear that there is too much space on the left of the numbers and the glyphs are not taking full advantage of the 12x48 pixel cells.
 
-Let's further enhance the effect of the font:
+Let's further improve the font:
 
 * Enter or slowly increase Font Height to a suitable value, in this case, 26
 * Adjust the Position (X,Y) using the arrow button with option "Adjust All" selected (in this case, X=-4, Y=-1)
@@ -91,7 +91,7 @@ After the adjustment, we should see the following result:
 
 ![MicroView Font Hack - Codehead Center Cell](/images/Codehead_Center_Cell.png)
 
-This result is almost perfect except there is still empty space on the right of the 9 glyph, and at the bottom of all the numbers. We can't correct this space further because Codehead Font Generator does not allow for a custom image size, so we will correct this with an image editor later.
+This result is almost perfect except there is still empty space on the right of the "9" glyph, and at the bottom of all the numbers. We can't further improve the font spacing in Codehead Font Generator, because it doesn't allow custom image sizes, so we'll correct the font in an image editor later.
 
 Click File, then Export Bitmap (BMP), save the file as `12x24Font.bmp`
 
@@ -188,7 +188,7 @@ You should get the following result:
 
 <p class="success">You have now successfully converted the bitmap font to a C header file.</p>
 
-#Adding Font Source File to MicroView Library
+#Adding the Font Source File to MicroView Library
 
 Move the edited `12x24Font.h` file to MicroView's library folder. You should be able to see the `12x24Font.h` in the same folder as the rest of the MicroView's files.
 
