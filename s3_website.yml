@@ -1,7 +1,9 @@
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
-s3_bucket: learn.microview.io.s3-website-ap-southeast-2.amazonaws.com
-cloudfront_distribution_id: E28WUMN2E37I1R
+s3_bucket: learn.microview.io
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_ID'] %>
+s3_endpoint: ap-southeast-2
+
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
