@@ -4,7 +4,7 @@
 
 permalink: /:categories/:title.html
 
-exclude: [".rvmrc", "Gemfile" , "Gemfile.lock" , ".rbenv-version", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", "Gemfile" , "Gemfile.lock" , ".rbenv-version", "Rakefile", "changelog.md", "s3_website.yml"]
 pygments: true
 
 markdown: kramdown
