@@ -99,4 +99,6 @@ Follow the instruction displayed on the MicroView, connect PIN 5 and PIN 8 of th
 
 The MicroView is able to detect if the LED is inserted with the correct polarity, if the LED does not blink, remove the LED and turn the pins the other way round and connect them to PIN 4 and PIN 5 of the MicroView. 
 
-<p class="info">You have now successfully gone through our Quick Start. Please proceed to [Getting Started with MicroView](/intro/getting-started.html) to install Arduino IDE or Codebender.</p>
+<p class="success">You have now successfully gone through our Quick Start.</p> 
+
+Please proceed to [Getting Started with MicroView](/intro/getting-started.html) to install Arduino IDE or Codebender.
