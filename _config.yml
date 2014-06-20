@@ -124,6 +124,3 @@ exclude_from_search: true
 
 lunr_search:
     excludes: [rss.xml, atom.xml]
-
-destination: ./_site
-
