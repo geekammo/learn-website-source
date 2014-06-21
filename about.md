@@ -3,6 +3,7 @@ layout: about
 title: About Us
 header: About Us
 group: navigation
+weight: 10
 ---
 <div style="text-align:center">
 <img src="/images/microview.jpg">

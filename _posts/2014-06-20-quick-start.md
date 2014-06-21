@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Quick Start - MicroView"
+title: "Quick Start"
 category: intro
 tagline: by JP Liew
 description: "Step-by-step instructions to quickly start your MicroView."
 thumbnail: /images/Thumbnail_MicroViewWithProgrammer.png
 tags: [microView, setup, quick start]
 comments: true
+group: navigation
+weight: 1
 ---
 Thank you backing our Kickstarter project. Before we get underway with setting up your MicroView, you should make sure you have got everything you need. 
 
