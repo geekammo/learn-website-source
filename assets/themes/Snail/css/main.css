@@ -84,7 +84,8 @@ h3,h3 a {
 }
 a {
 	text-decoration:none;
-	color:#005CFF;
+	/* color:#005CA0; */
+    color:#4183c4;
 }
 b,strong {
 	font-weight:600;
