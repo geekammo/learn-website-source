@@ -7,7 +7,7 @@ The MicroView Learn website is generated using Jekyll.  The following open sourc
 
 Please feel free to submit pull request for corrections, updates and bug fixes. We appreciate community contributions.
 
-# Building Doxygen documentation
+# Building Doxygen Documentation
 
 1. Install [Doxygen](http://www.stack.nl/~dimitri/doxygen/).
 2. Clone or pull the latest [learn-website-source repo](https://github.com/geekammo/learn-website-source.git) to learn-website-source folder.
@@ -17,11 +17,10 @@ Please feel free to submit pull request for corrections, updates and bug fixes. 
   * learn-website-source
 5. Change directory to learn-website-source by typing `cd learn-website-source` at the terminal.
 6. Type `doxygen _doxyconfig`
-7. Doxygen will iterate MicroView folder looking to comment in the CPP and H source code and generate html files in learn-website-source\doco\html
+7. Doxygen will iterate `MicroView` folder looking for comments in the CPP and H source code and generate html files in `learn-website-source\doco\html`
 8. Run `jekyll build` like normal.
-9. The resulted html files will be stored in learn-website-source\_site
+9. The resulted html files will be stored in `learn-website-source\_site`
 10. Push to Amazon or any web hosting site. 
-
 
 # Jekyll-Bootstrap
 
