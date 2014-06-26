@@ -51,5 +51,5 @@ var class_micro_view =
     [ "setDrawMode", "class_micro_view.html#a2ab706fa9d3e3cf77239316125f6e170", null ],
     [ "setFontType", "class_micro_view.html#a0b460e44ebcc5f159bc298fca7bb0602", null ],
     [ "setPageAddress", "class_micro_view.html#a5021dc0617e7f2215cf2748035cbaa1b", null ],
-    [ "write", "class_micro_view.html#a1947908410a74a1961f455eb29053606", null ]
+    [ "write", "class_micro_view.html#a2cc4d933dd91ce0e1408b681aed588fa", null ]
 ];
