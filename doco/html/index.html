@@ -52,36 +52,36 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ol>
 <p>### Example 1 - Hello World! </p><pre><code>
 #include &lt;<a class="el" href="_micro_view_8h_source.html">MicroView.h</a>&gt;</code></pre><pre><code>void setup() {
-        uView.begin();
+    uView.begin();
 }</code></pre><pre><code>void loop() {
-        uView.print("HelloWorld");
-        uView.display();                // display current page buffer
+    uView.print("HelloWorld");
+    uView.display();        // display current page buffer
 }
 </code></pre><p>### Example 2 - Basic Drawing </p><pre><code>
 #include &lt;<a class="el" href="_micro_view_8h_source.html">MicroView.h</a>&gt;</code></pre><pre><code>void setup() {
-        uView.begin();
-        uView.clear(PAGE);              // clear the page buffer
+    uView.begin();
+    uView.clear(PAGE);      // clear the page buffer
 }</code></pre><pre><code>void loop() {
-        uView.line(0,0,64,48);
-        uView.circle(32,24,10);
-        uView.rect(10,10,20,20);
-        uView.pixel(50,5);
-        uView.setCursor(0,40);
-        uView.print(" MicroView");
-        uView.display();                // display current page buffer
+    uView.line(0,0,64,48);
+    uView.circle(32,24,10);
+    uView.rect(10,10,20,20);
+    uView.pixel(50,5);
+    uView.setCursor(0,40);
+    uView.print(" MicroView");
+    uView.display();        // display current page buffer
 }
 </code></pre><p>### Example 3 - Widgets </p><pre><code>
 #include &lt;<a class="el" href="_micro_view_8h_source.html">MicroView.h</a>&gt;</code></pre><pre><code><a class="el" href="class_micro_view_widget.html">MicroViewWidget</a> *widget,*widget2;</code></pre><pre><code>void setup() {
-        uView.begin();
-        uView.clear(PAGE);
-        widget= new <a class="el" href="class_micro_view_gauge.html">MicroViewGauge(32,30,0,100)</a>;  // draw Gauge widget at x=32,y=30,min=0, max=100
-        widget2= new <a class="el" href="class_micro_view_slider.html">MicroViewSlider(0,0,0,100)</a>;  // draw Slider widget at x=0,y=0,min=0, max=100
+    uView.begin();
+    uView.clear(PAGE);
+    widget= new <a class="el" href="class_micro_view_gauge.html">MicroViewGauge(32,30,0,100)</a>;  // draw Gauge widget at x=32,y=30,min=0, max=100
+    widget2= new <a class="el" href="class_micro_view_slider.html">MicroViewSlider(0,0,0,100)</a>;  // draw Slider widget at x=0,y=0,min=0, max=100
 }</code></pre><pre><code>void loop() {
-        for(int i=0; i&lt;=100;i++) {
-                widget-&gt;setValue(i);    // give a value to widget
-                widget2-&gt;setValue(i);
-                uView.display();                // display current page buffer
-        }
+    for(int i=0; i&lt;=100;i++) {
+        widget-&gt;setValue(i);    // give a value to widget
+        widget2-&gt;setValue(i);
+        uView.display();        // display current page buffer
+    }
 }
 </code></pre><p>### Example 4 - Communication </p><pre><code>
 #include &lt;<a class="el" href="_micro_view_8h_source.html">MicroView.h</a>&gt;</code></pre><pre><code>void setup() {

@@ -44,6 +44,7 @@ code {
 pre code {
 	display: block;
 	overflow: auto;
+    padding: 5px 0px 5px 0px;
 }
 ins {
 	text-decoration:none;
