@@ -13,8 +13,8 @@ Please feel free to submit pull request for corrections, updates and bug fixes. 
 2. Clone or pull the latest [learn-website-source repo](https://github.com/geekammo/learn-website-source.git) to learn-website-source folder.
 3. Clone or pull the lastest [MicroView Library](https://github.com/geekammo/MicroView-Arduino-Library.git) to MicroView folder.
 4. Make sure you have the following folder structure:
-* MicroView
-* learn-website-source
+  * MicroView
+  * learn-website-source
 5. Change directory to learn-website-source by typing `cd learn-website-source` at the terminal.
 6. Type `doxygen _doxyconfig`
 7. Doxygen will iterate MicroView folder looking to comment in the CPP and H source code and generate html files in learn-website-source\doco\html
