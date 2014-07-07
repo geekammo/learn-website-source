@@ -44,13 +44,13 @@ If you have not purchase the factory USB Programmer and have a [FTDI Basic Break
 
 #STEP 3 - Choose the Right Arduino Software (IDE)
 
-There are currently two options when selecting the Arduino Sofware (IDE). The first option is to use the cloud based [Codebender](https://codebender.cc) and the second option is to use [Arduino IDE.](http://arduino.cc/en/main/software)
+There are currently two options when selecting the Arduino Sofware (IDE). The first option is to use the cloud based [Codebender](https://codebender.cc?referral_code=7fuuEtc89N) and the second option is to use [Arduino IDE.](http://arduino.cc/en/main/software)
 
 <p class="info">As our Learning Kit's tutorials are based on Codebender, and Codebender has already included MicroView's library in their cloud solution, we highly recommend users to use Codebender for our tutorials.</p>
 
 ##Using Codebender
 
-Installing Codebender is really simple, the prerequisite is just a Chrome or Firefox web-browser.  Using Chrome or Firefox, browse to [Codebender's Getting Started page]( https://codebender.cc/static/walkthrough/page/1) and then follow the steps below (shown using Firefox).
+Installing Codebender is really simple, the prerequisite is just a Chrome or Firefox web-browser.  Using Chrome or Firefox, browse to [Codebender's Getting Started page](https://codebender.cc?referral_code=7fuuEtc89N) and then follow the steps below (shown using Firefox).
 
 ![MicroView install Codebender Step 1](/images/Codebender_Step01.png)
 
