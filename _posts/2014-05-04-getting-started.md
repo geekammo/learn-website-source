@@ -50,7 +50,7 @@ There are currently two options when selecting the Arduino Sofware (IDE). The fi
 
 ##Using Codebender
 
-Installing Codebender is really simple, the prerequisite is just a Chrome or Firefox web-browser.  Using Chrome or Firefox, browse to [Codebender's Getting Started page](https://codebender.cc?referral_code=7fuuEtc89N) and then follow the steps below (shown using Firefox).
+Installing Codebender is really simple, the prerequisite is just a Chrome or Firefox web-browser.  Using Chrome or Firefox, browse to [Codebender's Getting Started page](https://codebender.cc/static/walkthrough/page/1?referral_code=7fuuEtc89N) and then follow the steps below (shown using Firefox).
 
 ![MicroView install Codebender Step 1](/images/Codebender_Step01.png)
 
