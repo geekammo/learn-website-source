@@ -20,7 +20,7 @@ Remove all parts from the SparkFun packaging.
 If you only have the MicroView without the USB Programmer, you will need the following:
 
 * [9V Battery](https://www.sparkfun.com/products/10218)
-* [9V Snap Connector](https://www.sparkfun.com/products/91) (Remove the Molex connector is necessary)
+* [9V Snap Connector](https://www.sparkfun.com/products/91) (Remove the Molex connector, replace both wires with male header pins if necessary)
 * [Jumper Wires M/M Pack of 10](https://www.sparkfun.com/products/8431) (If you need more, you can also get the [Pack of 100](https://www.sparkfun.com/products/10897)
 * [Breadboard](https://www.sparkfun.com/products/12002)
 
