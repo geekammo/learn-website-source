@@ -56,7 +56,7 @@ With the 8x16 font using RAM from screen buffer's ROW0 and ROW1, the data of the
 
     uView.print("Hello");
 
-Although MicroView's library includes 4 different types of font, these fonts might not your needs.  By following these steps you can make your own fonts and include them within the MicroView library:
+Although MicroView's library includes 4 different types of font, these fonts might not suit your needs.  By following these steps you can make your own fonts and include them within the MicroView library:
 
 1. Convert fonts to bitmap.
 2. Generate font source file from bitmap.
