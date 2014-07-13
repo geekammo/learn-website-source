@@ -122,4 +122,28 @@ Click File, Example, and find MicroView Example to confirm the installation.
     void loop () {
     }
 
+#STEP 5 - Select the Right Board
+
+In the Arduino IDE, click Tools, board and select Arduino Uno. Click Upload to upload your first sketch to MicroView.
+
+<p class="info">MicroView is using the same bootloader as Uno. It behaves like an Uno when uploading sketches.</p>
+
+For advance user that like to see MicroView as a board by itself in the IDE, add the following board definition to the `boards.txt` file. Depending on your setup, the `boards.txt` file usually located at `arduino-version\hardware\arduino` folder. Replace `arduino-version` with the right folder name for your Arduino version installed in your computer.
+
+    uview.name=MicroView
+    uview.upload.protocol=arduino
+    uview.upload.maximum_size=32256
+    uview.upload.speed=115200
+    uview.bootloader.low_fuses=0xff
+    uview.bootloader.high_fuses=0xde
+    uview.bootloader.extended_fuses=0x05
+    uview.bootloader.path=optiboot
+    uview.bootloader.file=optiboot_atmega328.hex
+    uview.bootloader.unlock_bits=0x3F
+    uview.bootloader.lock_bits=0x0F
+    uview.build.mcu=atmega328p
+    uview.build.f_cpu=16000000L
+    uview.build.core=arduino
+    uview.build.variant=standard
+ 
 <p class="success">Well done! You are now ready to try our other tutorials.</p>
