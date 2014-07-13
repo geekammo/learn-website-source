@@ -16,6 +16,14 @@ Thank you backing our Kickstarter project. Before we get underway with setting u
 
 Remove all parts from the SparkFun packaging.
 
+Identify PIN 1 of MicroView based on the following diagrams:
+
+![MicroView PIN 1 diagram](/images/BreadboardWithMicroView.png)
+
+![MicroView PIN identification](/images/MicroView_Factory_Programmer.jpg)
+
+<p class="info">In this guide, when there is a reference for PIN x of MicroView, it is referring to the above diagram's PIN number. For example, connect PIN 5 and PIN 8 of the MicroView</p>
+
 ##MicroView without Factory USB Programmer
 If you only have the MicroView without the USB Programmer, you will need the following:
 
