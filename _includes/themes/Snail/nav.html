@@ -3,7 +3,7 @@
 	</div>
 	<div id="nav-c">
 
-		<ul id="nav-list" style="width: 700px;">
+		<ul id="nav-list">
 			<li id="home"><a href="{{ HOME_PATH }}">Home</a></li>
             {% assign pages_list = site.posts %}
             {% assign group = 'navigation' %}
@@ -30,7 +30,8 @@
             {% endfor %}
 
             <!-- custom link start --!>
-            <li id="MicroView Library"><a href="/doco/html/index.html">MicroView Library</a>
+            <li id="Learning Kit"><a href="http://kit.microview.io">Learning Kit</a>
+            <li id="MicroView Library"><a href="/doco/html/index.html">uView Library</a>
             <!-- custom link end --!>
 
 			{% assign pages_list = site.pages %}
