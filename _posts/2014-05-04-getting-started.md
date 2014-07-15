@@ -10,21 +10,12 @@ comments: true
 ---
 In order to get your MicroView up and running, there are four easy steps to follow: 
 
-1.  Install drivers.
-2.  Prepare MicroView for programming
-3.  Choose Arduino software
+1.  Prepare MicroView for programming
+2.  Choose Arduino software
+3.  Select the right board
 4.  Write your first sketch
 
-#STEP 1 - Install Drivers
-MicroView, like the Arduino, relies on a programmer to upload sketches (Arduino code) and also communicate with the computer. This programmer often has a USB to TTL converter chip that creates a Virtual Serial Port on the computer when properly installed.  MicroView's [factory USB Programmer]( https://www.sparkfun.com/products/12924) uses the [FTDI's FT231X](http://www.ftdichip.com/Products/ICs/FT231X.html) to send the sketches to MicroView and also act as a communication medium between MicroView and the computer.
-
-Depending on the OS (Operating System) of your computer, the drivers are installed using different methods.  Below are the installation instructions prepared by SparkFun Electronics:
-
-* [How to Install FTDI Drivers for Windows]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/windows---quick-and-easy)
-* [How to Install FTDI Drivers for Linux]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/linux)
-* [How to Intall FTDI Drivers for Mac]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac)
-
-#STEP 2 - Prepare MicroView for Programming
+#STEP 1 - Prepare MicroView for Programming
 
 Once you have finished the FTDI Drivers installation, you will need to prepare your MicroView to be inserted into the computer's USB port.
 
@@ -42,11 +33,11 @@ If you have not purchase the factory USB Programmer and have a [FTDI Basic Break
 
 <p class="success">You have now successfully prepared the MicroView for programming.</p>
 
-#STEP 3 - Choose the Right Arduino Software (IDE)
+#STEP 2 - Choose the Right Arduino Software (IDE)
 
 There are currently two options when selecting the Arduino Sofware (IDE). The first option is to use the cloud based [Codebender](https://codebender.cc?referral_code=7fuuEtc89N) and the second option is to use [Arduino IDE.](http://arduino.cc/en/main/software)
 
-<p class="info">As our Learning Kit's tutorials are based on Codebender, and Codebender has already included MicroView's library in their cloud solution, we highly recommend users to use Codebender for our tutorials.</p>
+<p class="info">As our Learning Kit's tutorials are based on Codebender, and Codebender has already included MicroView's library in their cloud solution, we highly recommend users to use Codebender for our tutorials. Plus Codebender has made the drivers installation really straight forward and easy.</p>
 
 ##Using Codebender
 
@@ -80,6 +71,19 @@ Click `Restart Now` when you see the message "Codebender.cc Plugin will be insta
 
 ##Install Arduino IDE
 
+Before installing Arduino IDE, it is recommeded to install the USB programmer's driver first.
+
+###Install Drivers
+MicroView, like the Arduino, relies on a programmer to upload sketches (Arduino code) and also communicate with the computer. This programmer often has a USB to TTL converter chip that creates a Virtual Serial Port on the computer when properly installed.  MicroView's [factory USB Programmer]( https://www.sparkfun.com/products/12924) uses the [FTDI's FT231X](http://www.ftdichip.com/Products/ICs/FT231X.html) to send the sketches to MicroView and also act as a communication medium between MicroView and the computer.
+
+Depending on the OS (Operating System) of your computer, the drivers are installed using different methods.  Below are the installation instructions prepared by SparkFun Electronics:
+
+* [How to Install FTDI Drivers for Windows]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/windows---quick-and-easy)
+* [How to Install FTDI Drivers for Linux]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/linux)
+* [How to Intall FTDI Drivers for Mac]( https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac)
+
+
+###Install IDE
 Installing the Arduino IDE is normally straight forward, however it is still a bit challenging if one has never try before.  Luckily our partner SparkFun have already published step by step guides on:
 
 * [Installing Arduino IDE for Windows](https://learn.sparkfun.com/tutorials/installing-arduino-ide/windows)
@@ -108,21 +112,9 @@ Click File, Example, and find MicroView Example to confirm the installation.
 
 ![MicroView Library Installed](/images/MicroView_Library_Installed.png)
 
-#STEP 4 - Write Your First Sketch
+#STEP 3 - Select the Right Board
 
-    #include <MicroView.h>
-     
-    void setup() {
-      uView.begin();
-      uView.clear(PAGE);
-      uView.print("HelloWorld");
-      uView.display();
-    }
-     
-    void loop () {
-    }
-
-#STEP 5 - Select the Right Board
+If you are using Codebender, the MicroView is fully supported and will be automatically selected in all our examples. Proceed to STEP 4 and click `Run on Arduino` to run your first sketch.
 
 In the Arduino IDE, click Tools, board and select Arduino Uno. Click Upload to upload your first sketch to MicroView.
 
@@ -145,5 +137,14 @@ For advance user that like to see MicroView as a board by itself in the IDE, add
     uview.build.f_cpu=16000000L
     uview.build.core=arduino
     uview.build.variant=standard
- 
+
+
+#STEP 4 - Write Your First Sketch
+
+If you have installed Codebender, select the right COM port and then click `Run on Arduino` to upload your first sketch to MicroView. Watch the TX (red) and RX (yellow) LED blinks while the sketch is being uploaded to the MicroView.
+
+<iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:38829?board=MicroView" frameborder="0"></iframe>
+
+<p class="info">Arduino IDE users just need to cut and paste the above sketch starting from #include .... to ... void loop () {} into the Arduino IDE and click upload.</p>
+
 <p class="success">Well done! You are now ready to try our other tutorials.</p>
