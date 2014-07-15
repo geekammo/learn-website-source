@@ -13,7 +13,7 @@ In order to get your MicroView up and running, there are four easy steps to foll
 1.  Prepare MicroView for programming
 2.  Choose Arduino software
 3.  Select the right board
-4.  Write your first sketch
+4.  Run your first sketch
 
 #STEP 1 - Prepare MicroView for Programming
 
@@ -139,7 +139,7 @@ For advance user that like to see MicroView as a board by itself in the IDE, add
     uview.build.variant=standard
 
 
-#STEP 4 - Write Your First Sketch
+#STEP 4 - Run Your First Sketch
 
 If you have installed Codebender, select the right COM port and then click `Run on Arduino` to upload your first sketch to MicroView. Watch the TX (red) and RX (yellow) LED blinks while the sketch is being uploaded to the MicroView.
 
