@@ -67,7 +67,17 @@ Click `Install Now`
 
 Click `Restart Now` when you see the message "Codebender.cc Plugin will be installed after you restart Firefox."
 
-<p class="success">You have now successfully installed the Codebender plugin on your browser. Please proceed to STEP 4 – Write Your First Sketch</p>
+After restarting, the browser will load up a Driver Installation page.
+
+![MicroView install Codebender Step 7](/images/Codebender_Step07.png)
+
+Click `Download Drivers` and save the driver zip file in your prefered folder. When the download is finished, click to open the zip file and then execute the driver installation file.
+
+After the drivers have been successfully installed, a success page will be displayed.
+
+![MicroView install Codebender Step 9](/images/Codebender_Step09.png)
+
+<p class="success">You have now successfully installed the Codebender plugin on your browser. Please proceed to STEP 4 – Run Your First Sketch</p>
 
 ##Install Arduino IDE
 
