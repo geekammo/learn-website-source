@@ -122,7 +122,7 @@ Click File, Example, and find MicroView Example to confirm the installation.
 
 ![MicroView Library Installed](/images/MicroView_Library_Installed.png)
 
-If you wish to compile and upload the MicroViewDemo from out example, there is a 3rd party Time library that is required to be installed.  [Download the Time library](http://www.pjrc.com/teensy/arduino_libraries/Time.zip) and use the same method as installing a library discussed above to install it into the Arduino IDE.
+If you wish to compile and upload the MicroViewDemo from our example, there is a 3rd party Time library that is required to be installed.  [Download the Time library](http://www.pjrc.com/teensy/arduino_libraries/Time.zip) and use the same library installation method discussed above to install it into the Arduino IDE.
 
 <p class="info">The Arduino IDE requires users to manually manage and install 3rd party libraries, for a ready to go development environment, we recommend Codebender.</p>  
 
