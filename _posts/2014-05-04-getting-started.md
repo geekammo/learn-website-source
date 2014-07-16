@@ -130,7 +130,7 @@ If you wish to compile and upload the MicroViewDemo from our example, there is a
 
 If you are using Codebender, the MicroView is fully supported and will be automatically selected in all our examples. Proceed to STEP 4 and click `Run on Arduino` to run your first sketch.
 
-In the Arduino IDE, click Tools, board and select Arduino Uno. Click Upload to upload your first sketch to MicroView.
+In the Arduino IDE, click Tools, board and select Arduino Uno. Due to the nature of Arduino IDE being not able to detect a board, the COM port (Serial Port) of the MicroView USB Programmer needs to be manually selected by clicking Tools, Serial Port and select the right port that was created in the previous driver installation. Click Upload to upload your first sketch to MicroView.
 
 <p class="info">MicroView is using the same bootloader as Uno. It behaves like an Uno when uploading sketches.</p>
 
