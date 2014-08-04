@@ -136,6 +136,8 @@ In the Arduino IDE, click Tools, board and select Arduino Uno. Due to the nature
 
 For advance user that like to see MicroView as a board by itself in the IDE, add the following board definition to the `boards.txt` file. Depending on your setup, the `boards.txt` file usually located at `arduino-version\hardware\arduino` folder. Replace `arduino-version` with the right folder name for your Arduino version installed in your computer.
 
+    uview.upload.tool=avrdude
+    uview.bootloader.tool=avrdude
     uview.name=MicroView
     uview.upload.protocol=arduino
     uview.upload.maximum_size=32256
@@ -151,7 +153,6 @@ For advance user that like to see MicroView as a board by itself in the IDE, add
     uview.build.f_cpu=16000000L
     uview.build.core=arduino
     uview.build.variant=standard
-
 
 #STEP 4 - Run Your First Sketch
 

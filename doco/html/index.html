@@ -73,10 +73,30 @@ comments: true
 #include &lt;<a class="el" href="_micro_view_8h_source.html">MicroView.h</a>&gt;</code></pre><pre><code>void setup() {
     uView.begin();
     uView.clear(PAGE);
+    Serial.begin(115200);   // user decide the baud rate
 }</code></pre><pre><code>void loop() {
     uView.checkComm();
 }
 </code></pre><h2>History</h2>
+<p><b>v1.17b: 4th August 2014 by JP Liew</b></p><ul>
+<li>added reDraw() for <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a> class</li>
+<li>removed Serial.begin() from uView.begin() so that user can have control</li>
+<li>added MicroViewWidgetRedraw example</li>
+</ul>
+<p><b>v1.16b: 3rd August 2014 by czetie</b></p><ul>
+<li>added vertical slider widget</li>
+</ul>
+<p><b>v1.15b: 3rd August 2014 by Scott Allen</b></p><ul>
+<li>improved lots of low level routines, Fast SPI</li>
+<li>fixed some compilation warnings</li>
+<li>reduced overdriving display inputs</li>
+<li>added uVuew.end() to power off the display</li>
+<li>improved speed of display() and clear() functions</li>
+<li>fixed positionning of "3" on clock face</li>
+</ul>
+<p><b>v1.14b: 26th July 2014 by JP Liew</b></p><ul>
+<li>added Learning Kit Circuit Sketch</li>
+</ul>
 <p><b>v1.13b: 13th June 2014 by JP Liew</b></p><ul>
 <li>added Sine Wave Example</li>
 <li>inserted license to example code</li>
@@ -115,7 +135,7 @@ comments: true
 </ul>
 <p><b>v1.05b: 6th February 2014 by JP Liew</b></p><ul>
 <li>changed MICROVIEW class name to <a class="el" href="class_micro_view.html">MicroView</a></li>
-<li>created MICROVIEWWIDGET class</li>
+<li>created <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a> class</li>
 <li>added routines to draw widget</li>
 <li>added slider widget</li>
 <li>merged <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a> into <a class="el" href="class_micro_view.html">MicroView</a></li>

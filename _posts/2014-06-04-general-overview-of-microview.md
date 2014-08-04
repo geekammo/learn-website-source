@@ -30,6 +30,8 @@ The MicroView is the first chip-sized Arduino compatible that lets you see what 
 #Pin Configuration
 ![MicroView pinout](/images/MicroView_pinout.png)
 
+<p class="info">For more details on pins of MicroView, please refer to the <a href="http://www.atmel.com/Images/doc8161.pdf">ATmega328P Datasheet.</a></p> 
+
 #OLED Memory Map
 The [SSD1306](http://www.solomon-systech.com/en/product/display-ic/oled-driver-controller/ssd1306/) is the controller built into the MicroView's OLED display. It has flexible yet complex segment and common drivers. One requires vast knowledge on memory addressing in order to use the SSD1306 controller.
 

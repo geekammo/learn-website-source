@@ -33,10 +33,20 @@ comments: true
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a893032dbd8415bada7ae3aefb84e526b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a893032dbd8415bada7ae3aefb84e526b"></a>
-static byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_v_s_p_i_class.html#a893032dbd8415bada7ae3aefb84e526b">transfer</a> (byte _data)</td></tr>
-<tr class="memdesc:a893032dbd8415bada7ae3aefb84e526b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data byte via SPI port. <br /></td></tr>
-<tr class="separator:a893032dbd8415bada7ae3aefb84e526b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45534430f90c9bc30e10d793a950df9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45534430f90c9bc30e10d793a950df9f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">wait</a> ()</td></tr>
+<tr class="memdesc:a45534430f90c9bc30e10d793a950df9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for SPI serial transfer complete. <br /></td></tr>
+<tr class="separator:a45534430f90c9bc30e10d793a950df9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96040e123e57bf3215008d390eb005ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96040e123e57bf3215008d390eb005ff"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">transfer</a> (byte _data)</td></tr>
+<tr class="memdesc:a96040e123e57bf3215008d390eb005ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data byte via SPI port. <br /></td></tr>
+<tr class="separator:a96040e123e57bf3215008d390eb005ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f735c76eeafa4561a240df4945c14b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_v_s_p_i_class.html#ac0f735c76eeafa4561a240df4945c14b">packetBegin</a> ()</td></tr>
+<tr class="memdesc:ac0f735c76eeafa4561a240df4945c14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up to begin a SPI packet transmit.  <a href="#ac0f735c76eeafa4561a240df4945c14b">More...</a><br /></td></tr>
+<tr class="separator:ac0f735c76eeafa4561a240df4945c14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefebbcee9dd6494c1f9f153b1494a6a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_v_s_p_i_class.html#aeefebbcee9dd6494c1f9f153b1494a6a">packetEnd</a> ()</td></tr>
+<tr class="memdesc:aeefebbcee9dd6494c1f9f153b1494a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a SPI packet transmit.  <a href="#aeefebbcee9dd6494c1f9f153b1494a6a">More...</a><br /></td></tr>
+<tr class="separator:aeefebbcee9dd6494c1f9f153b1494a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdca4a48d9c2174be7b6c62a77c965f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbdca4a48d9c2174be7b6c62a77c965f"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>attachInterrupt</b> ()</td></tr>
 <tr class="separator:afbdca4a48d9c2174be7b6c62a77c965f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,7 +94,66 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>SPI Initialisation. </p>
-<p>Setup SCK, MOSI pins for SPI transmission. </p>
+<p>Setup SCK, MOSI, SS and DC pins for SPI transmission. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0f735c76eeafa4561a240df4945c14b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MVSPIClass::packetBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set up to begin a SPI packet transmit. </p>
+<p>Set up SPI for transmitting.</p>
+<p>Pepare the SPI interface for transmitting on or more bytes of commands and/or data. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeefebbcee9dd6494c1f9f153b1494a6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MVSPIClass::packetEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>End a SPI packet transmit. </p>
+<p>End a SPI packet transmission.</p>
+<p>End a SPI packet transmission:</p><ul>
+<li>Wait for the last byte to finish being transmitted.</li>
+<li>Set DC to command mode (even if already set that way, just in case).</li>
+<li>Set SS high.</li>
+<li>Disable SPI mode (causing SCK and MOSI to go low). </li>
+</ul>
 
 </div>
 </div>
@@ -166,7 +235,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Set SPI data mode. </p>
-<p>Set the SPI daa mode: clock polarity and phase. mode - SPI_MODE0, SPI_MODE1, SPI_MODE2, SPI_MODE3. </p>
+<p>Set the SPI data mode: clock polarity and phase. mode - SPI_MODE0, SPI_MODE1, SPI_MODE2, SPI_MODE3. </p>
 
 </div>
 </div>

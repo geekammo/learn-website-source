@@ -54,6 +54,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd4625a5b1d01eb7403348c53614a563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_gauge.html#abd4625a5b1d01eb7403348c53614a563">drawFace</a> ()</td></tr>
 <tr class="memdesc:abd4625a5b1d01eb7403348c53614a563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw widget face.  <a href="#abd4625a5b1d01eb7403348c53614a563">More...</a><br /></td></tr>
 <tr class="separator:abd4625a5b1d01eb7403348c53614a563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb257c94c9bf397ee6cd7dbcf6c9106b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb257c94c9bf397ee6cd7dbcf6c9106b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reDraw</b> ()</td></tr>
+<tr class="separator:acb257c94c9bf397ee6cd7dbcf6c9106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_micro_view_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_micro_view_widget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a></td></tr>
 <tr class="memitem:a97531f48ee6c034dd66fc7d9709bfc47 inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a97531f48ee6c034dd66fc7d9709bfc47">MicroViewWidget</a> (uint8_t newx, uint8_t newy, int16_t min, int16_t max)</td></tr>
 <tr class="memdesc:a97531f48ee6c034dd66fc7d9709bfc47 inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_micro_view.html">MicroView</a> widget parent class.  <a href="#a97531f48ee6c034dd66fc7d9709bfc47">More...</a><br /></td></tr>
@@ -92,6 +95,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#ad87bf3f69cd4b96fcaf31deb17c1d56e">setValue</a> (int16_t val)</td></tr>
 <tr class="memdesc:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value.  <a href="#ad87bf3f69cd4b96fcaf31deb17c1d56e">More...</a><br /></td></tr>
 <tr class="separator:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954def1edb309910d839b65dbeb08279 inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a954def1edb309910d839b65dbeb08279">reDraw</a> ()</td></tr>
+<tr class="memdesc:a954def1edb309910d839b65dbeb08279 inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_micro_view.html">MicroView</a> Widget reDraw routine.  <a href="#a954def1edb309910d839b65dbeb08279">More...</a><br /></td></tr>
+<tr class="separator:a954def1edb309910d839b65dbeb08279 inherit pub_methods_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_micro_view_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_micro_view_widget')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a></td></tr>
+<tr class="memitem:a0998f3935217edc19892b31b51d05919 inherit pub_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0998f3935217edc19892b31b51d05919"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>needFirstDraw</b></td></tr>
+<tr class="separator:a0998f3935217edc19892b31b51d05919 inherit pub_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a448ea22ffaba0822ee770f662367bba9"></a>
@@ -233,7 +246,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Draw widget face. </p>
-<p>Draw image/diagram represengint the widget's face. </p>
+<p>Draw image/diagram representing the widget's face. </p>
 
 <p>Reimplemented from <a class="el" href="class_micro_view_widget.html#a10e66e79a15cae61e82e31aab0473d73">MicroViewWidget</a>.</p>
 
