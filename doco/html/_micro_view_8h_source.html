@@ -282,86 +282,84 @@ comments: true
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="class_micro_view_slider.html#ad88e58b7972e9a0bd730c4211456dfea">MicroViewSlider</a>(uint8_t newx, uint8_t newy, int16_t min, int16_t max, uint8_t sty);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_slider.html#a4905b388d9824838e045acb4c12ac5c5">draw</a>();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_slider.html#afea59c82177ce65f7cceff755c2ae621">drawFace</a>();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> reDraw();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    uint8_t totalTicks, style;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    int16_t prevValue;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;};</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="class_micro_view_gauge.html">  268</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_micro_view_gauge.html">MicroViewGauge</a>: <span class="keyword">public</span> <a class="code" href="class_micro_view_widget.html">MicroViewWidget</a>{</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="class_micro_view_gauge.html#a448ea22ffaba0822ee770f662367bba9">MicroViewGauge</a>(uint8_t newx, uint8_t newy, int16_t min, int16_t max);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="class_micro_view_gauge.html#a448ea22ffaba0822ee770f662367bba9">MicroViewGauge</a>(uint8_t newx, uint8_t newy, int16_t min, int16_t max, uint8_t sty);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_gauge.html#add1b99bf0249ef54f83a2062a9d40f3c">draw</a>();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_gauge.html#abd4625a5b1d01eb7403348c53614a563">drawFace</a>();</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordtype">void</span> reDraw();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    uint8_t radius, style;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    int16_t prevValue;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;};</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV4 0x00</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV16 0x01</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV64 0x02</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV128 0x03</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV2 0x04</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV8 0x05</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV32 0x06</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">//#define SPI_CLOCK_DIV64 0x07</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#define SPI_MODE0 0x00</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#define SPI_MODE1 0x04</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#define SPI_MODE2 0x08</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#define SPI_MODE3 0x0C</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#define SPI_MODE_MASK 0x0C  // CPOL = bit 3, CPHA = bit 2 on SPCR</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#define SPI_CLOCK_MASK 0x03  // SPR1 = bit 1, SPR0 = bit 0 on SPCR</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#define SPI_2XCLOCK_MASK 0x01  // SPI2X = bit 0 on SPSR</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html">  298</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_m_v_s_p_i_class.html">MVSPIClass</a> {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">wait</a>();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">transfer</a>(byte _data);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#ac0f735c76eeafa4561a240df4945c14b">packetBegin</a>();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#aeefebbcee9dd6494c1f9f153b1494a6a">packetEnd</a>();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    uint8_t totalTicks, style;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    int16_t prevValue;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;};</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="class_micro_view_gauge.html">  267</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_micro_view_gauge.html">MicroViewGauge</a>: <span class="keyword">public</span> <a class="code" href="class_micro_view_widget.html">MicroViewWidget</a>{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="class_micro_view_gauge.html#a448ea22ffaba0822ee770f662367bba9">MicroViewGauge</a>(uint8_t newx, uint8_t newy, int16_t min, int16_t max);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="class_micro_view_gauge.html#a448ea22ffaba0822ee770f662367bba9">MicroViewGauge</a>(uint8_t newx, uint8_t newy, int16_t min, int16_t max, uint8_t sty);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_gauge.html#add1b99bf0249ef54f83a2062a9d40f3c">draw</a>();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_micro_view_gauge.html#abd4625a5b1d01eb7403348c53614a563">drawFace</a>();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    uint8_t radius, style;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    int16_t prevValue;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV4 0x00</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV16 0x01</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV64 0x02</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV128 0x03</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV2 0x04</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV8 0x05</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#define SPI_CLOCK_DIV32 0x06</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">//#define SPI_CLOCK_DIV64 0x07</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#define SPI_MODE0 0x00</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#define SPI_MODE1 0x04</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#define SPI_MODE2 0x08</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#define SPI_MODE3 0x0C</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#define SPI_MODE_MASK 0x0C  // CPOL = bit 3, CPHA = bit 2 on SPCR</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#define SPI_CLOCK_MASK 0x03  // SPR1 = bit 1, SPR0 = bit 0 on SPCR</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#define SPI_2XCLOCK_MASK 0x01  // SPI2X = bit 0 on SPSR</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html">  296</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_m_v_s_p_i_class.html">MVSPIClass</a> {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">wait</a>();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">transfer</a>(byte _data);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#ac0f735c76eeafa4561a240df4945c14b">packetBegin</a>();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#aeefebbcee9dd6494c1f9f153b1494a6a">packetEnd</a>();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="comment">// SPI Configuration methods</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="comment">// SPI Configuration methods</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> attachInterrupt();</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> detachInterrupt(); <span class="comment">// Default</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a5d5db5dc85a0e114325f758b47a2c1af">begin</a>(); <span class="comment">// Default</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#af439a684af8326b856ef132f31123b20">end</a>();</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a5faf4569ec95e622a1e16c6a79e4c9cb">setBitOrder</a>(uint8_t);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a18dc53a6809768babd342cc37cf69c8e">setDataMode</a>(uint8_t);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#ad8e34a29f04f107e8b62cc3848a26487">setClockDivider</a>(uint8_t);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;};</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> attachInterrupt();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> detachInterrupt(); <span class="comment">// Default</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a5d5db5dc85a0e114325f758b47a2c1af">begin</a>(); <span class="comment">// Default</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#af439a684af8326b856ef132f31123b20">end</a>();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a5faf4569ec95e622a1e16c6a79e4c9cb">setBitOrder</a>(uint8_t);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a18dc53a6809768babd342cc37cf69c8e">setDataMode</a>(uint8_t);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#ad8e34a29f04f107e8b62cc3848a26487">setClockDivider</a>(uint8_t);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;};</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_m_v_s_p_i_class.html">MVSPIClass</a> MVSPI;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_m_v_s_p_i_class.html">MVSPIClass</a> MVSPI;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">  327</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">MVSPIClass::wait</a>() {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordflow">while</span> (!(SPSR &amp; _BV(SPIF)))</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    ;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">  332</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">MVSPIClass::transfer</a>(byte _data) {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  SPDR = _data;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keywordtype">void</span> MVSPIClass::attachInterrupt() {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  SPCR |= _BV(SPIE);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keywordtype">void</span> MVSPIClass::detachInterrupt() {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  SPCR &amp;= ~_BV(SPIE);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_micro_view.html">MicroView</a> uView;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">  325</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">MVSPIClass::wait</a>() {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">while</span> (!(SPSR &amp; _BV(SPIF)))</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    ;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">  330</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">MVSPIClass::transfer</a>(byte _data) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  SPDR = _data;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keywordtype">void</span> MVSPIClass::attachInterrupt() {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  SPCR |= _BV(SPIE);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;}</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keywordtype">void</span> MVSPIClass::detachInterrupt() {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  SPCR &amp;= ~_BV(SPIE);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_micro_view.html">MicroView</a> uView;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_micro_view_html_ab24a1a0f5316abfd60cb50c3497d1c6b"><div class="ttname"><a href="class_micro_view.html#ab24a1a0f5316abfd60cb50c3497d1c6b">MicroView::display</a></div><div class="ttdeci">void display(void)</div><div class="ttdoc">Transfer display memory. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:335</div></div>
 <div class="ttc" id="class_micro_view_html_a978c1459581035d9e559c81d7eb51d6d"><div class="ttname"><a href="class_micro_view.html#a978c1459581035d9e559c81d7eb51d6d">MicroView::getLCDWidth</a></div><div class="ttdeci">uint8_t getLCDWidth(void)</div><div class="ttdoc">Get LCD width. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:658</div></div>
 <div class="ttc" id="class_m_v_s_p_i_class_html_ad8e34a29f04f107e8b62cc3848a26487"><div class="ttname"><a href="class_m_v_s_p_i_class.html#ad8e34a29f04f107e8b62cc3848a26487">MVSPIClass::setClockDivider</a></div><div class="ttdeci">static void setClockDivider(uint8_t)</div><div class="ttdoc">Set clock divider. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1825</div></div>
@@ -380,7 +378,7 @@ comments: true
 <div class="ttc" id="class_m_v_s_p_i_class_html_a18dc53a6809768babd342cc37cf69c8e"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a18dc53a6809768babd342cc37cf69c8e">MVSPIClass::setDataMode</a></div><div class="ttdeci">static void setDataMode(uint8_t)</div><div class="ttdoc">Set SPI data mode. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1808</div></div>
 <div class="ttc" id="class_micro_view_html_aa78580794f5a86cc94ca085257816746"><div class="ttname"><a href="class_micro_view.html#aa78580794f5a86cc94ca085257816746">MicroView::command</a></div><div class="ttdeci">void command(uint8_t c)</div><div class="ttdoc">Send 1 command byte. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:195</div></div>
 <div class="ttc" id="class_micro_view_slider_html_afea59c82177ce65f7cceff755c2ae621"><div class="ttname"><a href="class_micro_view_slider.html#afea59c82177ce65f7cceff755c2ae621">MicroViewSlider::drawFace</a></div><div class="ttdeci">void drawFace()</div><div class="ttdoc">Draw widget face. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1466</div></div>
-<div class="ttc" id="class_m_v_s_p_i_class_html"><div class="ttname"><a href="class_m_v_s_p_i_class.html">MVSPIClass</a></div><div class="ttdef"><b>Definition:</b> MicroView.h:298</div></div>
+<div class="ttc" id="class_m_v_s_p_i_class_html"><div class="ttname"><a href="class_m_v_s_p_i_class.html">MVSPIClass</a></div><div class="ttdef"><b>Definition:</b> MicroView.h:296</div></div>
 <div class="ttc" id="class_micro_view_html_a1f02a2ef2c4c75ddf7f6bd8458c87596"><div class="ttname"><a href="class_micro_view.html#a1f02a2ef2c4c75ddf7f6bd8458c87596">MicroView::getFontHeight</a></div><div class="ttdeci">uint8_t getFontHeight(void)</div><div class="ttdoc">Get font height. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:674</div></div>
 <div class="ttc" id="class_micro_view_html_afeb7fac699e81798c07eb454fac5c5e7"><div class="ttname"><a href="class_micro_view.html#afeb7fac699e81798c07eb454fac5c5e7">MicroView::pixel</a></div><div class="ttdeci">void pixel(uint8_t x, uint8_t y)</div><div class="ttdoc">Draw pixel. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:395</div></div>
 <div class="ttc" id="class_micro_view_slider_html_a4905b388d9824838e045acb4c12ac5c5"><div class="ttname"><a href="class_micro_view_slider.html#a4905b388d9824838e045acb4c12ac5c5">MicroViewSlider::draw</a></div><div class="ttdeci">void draw()</div><div class="ttdoc">Draw widget value. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1540</div></div>
@@ -409,12 +407,12 @@ comments: true
 <div class="ttc" id="class_micro_view_html_a2603bd40bfd6b1bbf25e807c589055da"><div class="ttname"><a href="class_micro_view.html#a2603bd40bfd6b1bbf25e807c589055da">MicroView::getFontTotalChar</a></div><div class="ttdeci">uint8_t getFontTotalChar(void)</div><div class="ttdoc">Get font total characters. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:690</div></div>
 <div class="ttc" id="class_m_v_s_p_i_class_html_a5d5db5dc85a0e114325f758b47a2c1af"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a5d5db5dc85a0e114325f758b47a2c1af">MVSPIClass::begin</a></div><div class="ttdeci">static void begin()</div><div class="ttdoc">SPI Initialisation. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1731</div></div>
 <div class="ttc" id="class_micro_view_html_ab3a5dfa89dc39405c1f2928da4f0c063"><div class="ttname"><a href="class_micro_view.html#ab3a5dfa89dc39405c1f2928da4f0c063">MicroView::scrollRight</a></div><div class="ttdeci">void scrollRight(uint8_t start, uint8_t stop)</div><div class="ttdoc">Right scrolling. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:859</div></div>
-<div class="ttc" id="class_micro_view_gauge_html"><div class="ttname"><a href="class_micro_view_gauge.html">MicroViewGauge</a></div><div class="ttdef"><b>Definition:</b> MicroView.h:268</div></div>
+<div class="ttc" id="class_micro_view_gauge_html"><div class="ttname"><a href="class_micro_view_gauge.html">MicroViewGauge</a></div><div class="ttdef"><b>Definition:</b> MicroView.h:267</div></div>
 <div class="ttc" id="class_micro_view_widget_html_af3b117bde21b1643071d2d06a423c458"><div class="ttname"><a href="class_micro_view_widget.html#af3b117bde21b1643071d2d06a423c458">MicroViewWidget::setMinValue</a></div><div class="ttdeci">void setMinValue(int16_t max)</div><div class="ttdoc">Set minimum value. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1380</div></div>
 <div class="ttc" id="class_micro_view_html_af9b0a924489c4542225cde49c6a843ab"><div class="ttname"><a href="class_micro_view.html#af9b0a924489c4542225cde49c6a843ab">MicroView::setColor</a></div><div class="ttdeci">void setColor(uint8_t color)</div><div class="ttdoc">Set color. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:731</div></div>
 <div class="ttc" id="class_micro_view_html_a75890524642c34c3a71ab6507bfd1192"><div class="ttname"><a href="class_micro_view.html#a75890524642c34c3a71ab6507bfd1192">MicroView::flipVertical</a></div><div class="ttdeci">void flipVertical(boolean flip)</div><div class="ttdoc">Vertical flip. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:872</div></div>
 <div class="ttc" id="class_m_v_s_p_i_class_html_ac0f735c76eeafa4561a240df4945c14b"><div class="ttname"><a href="class_m_v_s_p_i_class.html#ac0f735c76eeafa4561a240df4945c14b">MVSPIClass::packetBegin</a></div><div class="ttdeci">static void packetBegin()</div><div class="ttdoc">Set up to begin a SPI packet transmit. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1767</div></div>
-<div class="ttc" id="class_m_v_s_p_i_class_html_a45534430f90c9bc30e10d793a950df9f"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">MVSPIClass::wait</a></div><div class="ttdeci">static void wait()</div><div class="ttdoc">Wait for SPI serial transfer complete. </div><div class="ttdef"><b>Definition:</b> MicroView.h:327</div></div>
+<div class="ttc" id="class_m_v_s_p_i_class_html_a45534430f90c9bc30e10d793a950df9f"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a45534430f90c9bc30e10d793a950df9f">MVSPIClass::wait</a></div><div class="ttdeci">static void wait()</div><div class="ttdoc">Wait for SPI serial transfer complete. </div><div class="ttdef"><b>Definition:</b> MicroView.h:325</div></div>
 <div class="ttc" id="class_micro_view_gauge_html_abd4625a5b1d01eb7403348c53614a563"><div class="ttname"><a href="class_micro_view_gauge.html#abd4625a5b1d01eb7403348c53614a563">MicroViewGauge::drawFace</a></div><div class="ttdeci">void drawFace()</div><div class="ttdoc">Draw widget face. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1645</div></div>
 <div class="ttc" id="class_micro_view_html_a87c24608e1876002ece85fed7515a288"><div class="ttname"><a href="class_micro_view.html#a87c24608e1876002ece85fed7515a288">MicroView::drawChar</a></div><div class="ttdeci">void drawChar(uint8_t x, uint8_t y, uint8_t c)</div><div class="ttdoc">Draw character. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:747</div></div>
 <div class="ttc" id="class_micro_view_html_a807da97ce788edd161c53e2c4b93ad5d"><div class="ttname"><a href="class_micro_view.html#a807da97ce788edd161c53e2c4b93ad5d">MicroView::getFontStartChar</a></div><div class="ttdeci">uint8_t getFontStartChar(void)</div><div class="ttdoc">Get font starting character. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:682</div></div>
@@ -422,7 +420,7 @@ comments: true
 <div class="ttc" id="class_micro_view_html_a486a2e1e016b2191be2b985ccf0cf40f"><div class="ttname"><a href="class_micro_view.html#a486a2e1e016b2191be2b985ccf0cf40f">MicroView::begin</a></div><div class="ttdeci">void begin(void)</div><div class="ttdoc">Initialisation of MicroView Library. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:120</div></div>
 <div class="ttc" id="class_micro_view_html_a29413c99512905fc14f02f3600586b4a"><div class="ttname"><a href="class_micro_view.html#a29413c99512905fc14f02f3600586b4a">MicroView::rectFill</a></div><div class="ttdeci">void rectFill(uint8_t x, uint8_t y, uint8_t width, uint8_t height)</div><div class="ttdoc">Draw filled rectangle. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:535</div></div>
 <div class="ttc" id="class_micro_view_html_a6a2d6c4d92c600a93a174e42cc75c85b"><div class="ttname"><a href="class_micro_view.html#a6a2d6c4d92c600a93a174e42cc75c85b">MicroView::clear</a></div><div class="ttdeci">void clear(uint8_t mode)</div><div class="ttdoc">Clear screen buffer or SSD1306&#39;s memory. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:260</div></div>
-<div class="ttc" id="class_m_v_s_p_i_class_html_a96040e123e57bf3215008d390eb005ff"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">MVSPIClass::transfer</a></div><div class="ttdeci">static void transfer(byte _data)</div><div class="ttdoc">Transfer data byte via SPI port. </div><div class="ttdef"><b>Definition:</b> MicroView.h:332</div></div>
+<div class="ttc" id="class_m_v_s_p_i_class_html_a96040e123e57bf3215008d390eb005ff"><div class="ttname"><a href="class_m_v_s_p_i_class.html#a96040e123e57bf3215008d390eb005ff">MVSPIClass::transfer</a></div><div class="ttdeci">static void transfer(byte _data)</div><div class="ttdoc">Transfer data byte via SPI port. </div><div class="ttdef"><b>Definition:</b> MicroView.h:330</div></div>
 <div class="ttc" id="class_micro_view_html_a6396da69a6160545b79b9478320d14ba"><div class="ttname"><a href="class_micro_view.html#a6396da69a6160545b79b9478320d14ba">MicroView::contrast</a></div><div class="ttdeci">void contrast(uint8_t contrast)</div><div class="ttdoc">Set contrast. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:327</div></div>
 <div class="ttc" id="class_micro_view_widget_html_a57db99cb8cac6500a0ac8debbc54d678"><div class="ttname"><a href="class_micro_view_widget.html#a57db99cb8cac6500a0ac8debbc54d678">MicroViewWidget::setY</a></div><div class="ttdeci">void setY(uint8_t newy)</div><div class="ttdoc">Set widget y position. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:1356</div></div>
 <div class="ttc" id="class_micro_view_html_a1cb8c9f9eccb054f7195b0926204c795"><div class="ttname"><a href="class_micro_view.html#a1cb8c9f9eccb054f7195b0926204c795">MicroView::invert</a></div><div class="ttdeci">void invert(boolean inv)</div><div class="ttdoc">Invert display. </div><div class="ttdef"><b>Definition:</b> MicroView.cpp:316</div></div>
