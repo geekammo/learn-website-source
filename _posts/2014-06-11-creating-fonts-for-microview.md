@@ -138,6 +138,10 @@ and replace with
     // first row defines - FONTWIDTH, FONTHEIGHT, ASCII START CHAR, TOTAL CHARACTERS, FONT MAP WIDTH HIGH, FONT MAP WIDTH LOW (2,56 meaning 256)
         12,24,48,10,1,20,
 
+
+<p class="info">FONT MAP WIDTH is basically the WIDTH of the BITMAP file used to generate the fonts.  In this situation, the WIDTH of the BITMAP file is 120. So the HIGH number is 1 and the LOW number is 20.</p>
+
+
 Then replace
 
     };
