@@ -1,0 +1,7 @@
+<div class="page-title-inline">
+        <h1>{{ page.title }} {% if page.tagline %}</h1>
+        <h2>{{ page.tagline }}</h2>{% endif %}
+</div>
+<div id="terms-cont">
+    Type in the word or phrase for which you want to search in the search box on top left.
+</div>

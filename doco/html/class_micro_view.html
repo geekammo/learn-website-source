@@ -155,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawBitmap</b> (void)
 <tr class="memitem:a2ab706fa9d3e3cf77239316125f6e170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view.html#a2ab706fa9d3e3cf77239316125f6e170">setDrawMode</a> (uint8_t mode)</td></tr>
 <tr class="memdesc:a2ab706fa9d3e3cf77239316125f6e170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set draw mode.  <a href="#a2ab706fa9d3e3cf77239316125f6e170">More...</a><br /></td></tr>
 <tr class="separator:a2ab706fa9d3e3cf77239316125f6e170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3275530795cb687e94d0034ea65af3"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view.html#a3c3275530795cb687e94d0034ea65af3">getScreenBuffer</a> (void)</td></tr>
+<tr class="memdesc:a3c3275530795cb687e94d0034ea65af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to screen buffer.  <a href="#a3c3275530795cb687e94d0034ea65af3">More...</a><br /></td></tr>
+<tr class="separator:a3c3275530795cb687e94d0034ea65af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a442a179ba3c461ffe66652efb65e8268"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view.html#a442a179ba3c461ffe66652efb65e8268">getFontWidth</a> (void)</td></tr>
 <tr class="memdesc:a442a179ba3c461ffe66652efb65e8268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get font width.  <a href="#a442a179ba3c461ffe66652efb65e8268">More...</a><br /></td></tr>
 <tr class="separator:a442a179ba3c461ffe66652efb65e8268"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,8 +182,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawBitmap</b> (void)
 <tr class="memitem:ab3a5dfa89dc39405c1f2928da4f0c063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view.html#ab3a5dfa89dc39405c1f2928da4f0c063">scrollRight</a> (uint8_t start, uint8_t stop)</td></tr>
 <tr class="memdesc:ab3a5dfa89dc39405c1f2928da4f0c063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right scrolling.  <a href="#ab3a5dfa89dc39405c1f2928da4f0c063">More...</a><br /></td></tr>
 <tr class="separator:ab3a5dfa89dc39405c1f2928da4f0c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3090a57df0ab2dc5ce29cef89dc0de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c3090a57df0ab2dc5ce29cef89dc0de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollLeft</b> (uint8_t start, uint8_t stop)</td></tr>
+<tr class="memitem:a8c3090a57df0ab2dc5ce29cef89dc0de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view.html#a8c3090a57df0ab2dc5ce29cef89dc0de">scrollLeft</a> (uint8_t start, uint8_t stop)</td></tr>
+<tr class="memdesc:a8c3090a57df0ab2dc5ce29cef89dc0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left scrolling.  <a href="#a8c3090a57df0ab2dc5ce29cef89dc0de">More...</a><br /></td></tr>
 <tr class="separator:a8c3090a57df0ab2dc5ce29cef89dc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb1413bd735ce555b46095d176548568"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb1413bd735ce555b46095d176548568"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollVertRight</b> (uint8_t start, uint8_t stop)</td></tr>
@@ -886,6 +889,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollVertLeft</b> (u
 
 </div>
 </div>
+<a class="anchor" id="a3c3275530795cb687e94d0034ea65af3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t * MicroView::getScreenBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pointer to screen buffer. </p>
+<p>Return a pointer to the start of the RAM screen buffer for direct access. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8709100e1599f16ad51dbfdc1b0e2fe2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1437,6 +1459,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollVertLeft</b> (u
 
 <p>Draw filled rectangle with color and mode. </p>
 <p>Draw filled rectangle using color and mode from x,y to x+width,y+height of the screen buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c3090a57df0ab2dc5ce29cef89dc0de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MicroView::scrollLeft </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>stop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Left scrolling. </p>
+<p>Set row start to row stop on the OLED to scroll left. Refer to <a href="http://learn.microview.io/intro/general-overview-of-microview.html">http://learn.microview.io/intro/general-overview-of-microview.html</a> for explanation of the rows. </p>
 
 </div>
 </div>
