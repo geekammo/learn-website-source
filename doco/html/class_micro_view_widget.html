@@ -25,7 +25,7 @@ comments: true
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_micro_view_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MicroViewWidget Class Reference</div>  </div>
@@ -81,8 +81,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#ad87bf3f69cd4b96fcaf31deb17c1d56e">setValue</a> (int16_t val)</td></tr>
 <tr class="memdesc:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value.  <a href="#ad87bf3f69cd4b96fcaf31deb17c1d56e">More...</a><br /></td></tr>
 <tr class="separator:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403e8d54c06d465f6a38ecaeab83103"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a6403e8d54c06d465f6a38ecaeab83103">getValLen</a> ()</td></tr>
+<tr class="memdesc:a6403e8d54c06d465f6a38ecaeab83103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the print length of the value.  <a href="#a6403e8d54c06d465f6a38ecaeab83103">More...</a><br /></td></tr>
+<tr class="separator:a6403e8d54c06d465f6a38ecaeab83103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aebdae211e45b7248fa97be8dce9e4e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a4aebdae211e45b7248fa97be8dce9e4e">getMaxValLen</a> ()</td></tr>
-<tr class="memdesc:a4aebdae211e45b7248fa97be8dce9e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum possible print lenth of the value.  <a href="#a4aebdae211e45b7248fa97be8dce9e4e">More...</a><br /></td></tr>
+<tr class="memdesc:a4aebdae211e45b7248fa97be8dce9e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum possible print length of the value.  <a href="#a4aebdae211e45b7248fa97be8dce9e4e">More...</a><br /></td></tr>
 <tr class="separator:a4aebdae211e45b7248fa97be8dce9e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03a8ad4d36e8ce63b68e46e45fd35f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03a8ad4d36e8ce63b68e46e45fd35f41"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a03a8ad4d36e8ce63b68e46e45fd35f41">draw</a> ()</td></tr>
@@ -99,11 +102,29 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ab77cc27e79c559d5028ddbcbde8e82c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a signed decimal numeric value at the current cursor location.  <a href="#ab77cc27e79c559d5028ddbcbde8e82c1">More...</a><br /></td></tr>
 <tr class="separator:ab77cc27e79c559d5028ddbcbde8e82c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a0998f3935217edc19892b31b51d05919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0998f3935217edc19892b31b51d05919"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>needFirstDraw</b></td></tr>
-<tr class="separator:a0998f3935217edc19892b31b51d05919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5aa1e71d10493c258e532d2fdb65482b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aa1e71d10493c258e532d2fdb65482b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>posX</b></td></tr>
+<tr class="separator:a5aa1e71d10493c258e532d2fdb65482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781479dbbed46b1530ad468974a5a656"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a781479dbbed46b1530ad468974a5a656"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>posY</b></td></tr>
+<tr class="separator:a781479dbbed46b1530ad468974a5a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb31c6585c0d35c8f9f30609908300b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb31c6585c0d35c8f9f30609908300b"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>minValue</b></td></tr>
+<tr class="separator:a8fb31c6585c0d35c8f9f30609908300b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbd5c9e0eabbac426392668657297c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cbd5c9e0eabbac426392668657297c4"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxValue</b></td></tr>
+<tr class="separator:a9cbd5c9e0eabbac426392668657297c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af105034eedc533a3e88038b944b48743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af105034eedc533a3e88038b944b48743"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="separator:af105034eedc533a3e88038b944b48743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bd3e1991d622f19d7dec476e6ff1a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9bd3e1991d622f19d7dec476e6ff1a5"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>valLen</b></td></tr>
+<tr class="separator:ae9bd3e1991d622f19d7dec476e6ff1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189f0f4825035f6bed726b91ae1fda7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a189f0f4825035f6bed726b91ae1fda7c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxValLen</b></td></tr>
+<tr class="separator:a189f0f4825035f6bed726b91ae1fda7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a97531f48ee6c034dd66fc7d9709bfc47"></a>
@@ -180,8 +201,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>needFirstDraw</b></td
       </table>
 </div><div class="memdoc">
 
-<p>Get the maximum possible print lenth of the value. </p>
-<p>Return the maximum number of characters that would be printed using printf("%d", value) for the current value range. </p>
+<p>Get the maximum possible print length of the value. </p>
+<p>Return the maximum number of characters that would be printed using uView.print(value) for the current value range. </p>
 
 </div>
 </div>
@@ -218,6 +239,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>needFirstDraw</b></td
 
 <p>Get minimum value. </p>
 <p>Return the minimum value of the widget. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6403e8d54c06d465f6a38ecaeab83103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t MicroViewWidget::getValLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the print length of the value. </p>
+<p>Return the number of characters that would be printed using uView.print(value) for the current value. </p>
 
 </div>
 </div>

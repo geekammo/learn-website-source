@@ -92,8 +92,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#ad87bf3f69cd4b96fcaf31deb17c1d56e">setValue</a> (int16_t val)</td></tr>
 <tr class="memdesc:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value.  <a href="#ad87bf3f69cd4b96fcaf31deb17c1d56e">More...</a><br /></td></tr>
 <tr class="separator:ad87bf3f69cd4b96fcaf31deb17c1d56e inherit pub_methods_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403e8d54c06d465f6a38ecaeab83103 inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a6403e8d54c06d465f6a38ecaeab83103">getValLen</a> ()</td></tr>
+<tr class="memdesc:a6403e8d54c06d465f6a38ecaeab83103 inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the print length of the value.  <a href="#a6403e8d54c06d465f6a38ecaeab83103">More...</a><br /></td></tr>
+<tr class="separator:a6403e8d54c06d465f6a38ecaeab83103 inherit pub_methods_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aebdae211e45b7248fa97be8dce9e4e inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a4aebdae211e45b7248fa97be8dce9e4e">getMaxValLen</a> ()</td></tr>
-<tr class="memdesc:a4aebdae211e45b7248fa97be8dce9e4e inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum possible print lenth of the value.  <a href="#a4aebdae211e45b7248fa97be8dce9e4e">More...</a><br /></td></tr>
+<tr class="memdesc:a4aebdae211e45b7248fa97be8dce9e4e inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum possible print length of the value.  <a href="#a4aebdae211e45b7248fa97be8dce9e4e">More...</a><br /></td></tr>
 <tr class="separator:a4aebdae211e45b7248fa97be8dce9e4e inherit pub_methods_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a954def1edb309910d839b65dbeb08279 inherit pub_methods_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a954def1edb309910d839b65dbeb08279">reDraw</a> ()</td></tr>
 <tr class="memdesc:a954def1edb309910d839b65dbeb08279 inherit pub_methods_class_micro_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_micro_view.html">MicroView</a> Widget reDraw routine.  <a href="#a954def1edb309910d839b65dbeb08279">More...</a><br /></td></tr>
@@ -104,10 +107,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_micro_view_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_micro_view_widget')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a></td></tr>
-<tr class="memitem:a0998f3935217edc19892b31b51d05919 inherit pub_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0998f3935217edc19892b31b51d05919"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>needFirstDraw</b></td></tr>
-<tr class="separator:a0998f3935217edc19892b31b51d05919 inherit pub_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_micro_view_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_micro_view_widget')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_micro_view_widget.html">MicroViewWidget</a></td></tr>
+<tr class="memitem:a5aa1e71d10493c258e532d2fdb65482b inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aa1e71d10493c258e532d2fdb65482b"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>posX</b></td></tr>
+<tr class="separator:a5aa1e71d10493c258e532d2fdb65482b inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781479dbbed46b1530ad468974a5a656 inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a781479dbbed46b1530ad468974a5a656"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>posY</b></td></tr>
+<tr class="separator:a781479dbbed46b1530ad468974a5a656 inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb31c6585c0d35c8f9f30609908300b inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb31c6585c0d35c8f9f30609908300b"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>minValue</b></td></tr>
+<tr class="separator:a8fb31c6585c0d35c8f9f30609908300b inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbd5c9e0eabbac426392668657297c4 inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cbd5c9e0eabbac426392668657297c4"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxValue</b></td></tr>
+<tr class="separator:a9cbd5c9e0eabbac426392668657297c4 inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af105034eedc533a3e88038b944b48743 inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af105034eedc533a3e88038b944b48743"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="separator:af105034eedc533a3e88038b944b48743 inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bd3e1991d622f19d7dec476e6ff1a5 inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9bd3e1991d622f19d7dec476e6ff1a5"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>valLen</b></td></tr>
+<tr class="separator:ae9bd3e1991d622f19d7dec476e6ff1a5 inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189f0f4825035f6bed726b91ae1fda7c inherit pro_attribs_class_micro_view_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a189f0f4825035f6bed726b91ae1fda7c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxValLen</b></td></tr>
+<tr class="separator:a189f0f4825035f6bed726b91ae1fda7c inherit pro_attribs_class_micro_view_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad88e58b7972e9a0bd730c4211456dfea"></a>
