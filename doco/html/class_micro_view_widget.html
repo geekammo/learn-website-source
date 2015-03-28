@@ -79,8 +79,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:af7171dbd8361b97aeb0f6dfd852aa1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximum value.  <a href="#af7171dbd8361b97aeb0f6dfd852aa1d6">More...</a><br /></td></tr>
 <tr class="separator:af7171dbd8361b97aeb0f6dfd852aa1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#ad87bf3f69cd4b96fcaf31deb17c1d56e">setValue</a> (int16_t val)</td></tr>
-<tr class="memdesc:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value.  <a href="#ad87bf3f69cd4b96fcaf31deb17c1d56e">More...</a><br /></td></tr>
+<tr class="memdesc:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value and update widget.  <a href="#ad87bf3f69cd4b96fcaf31deb17c1d56e">More...</a><br /></td></tr>
 <tr class="separator:ad87bf3f69cd4b96fcaf31deb17c1d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976cb334a968c2aac3f65833ba6622f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a976cb334a968c2aac3f65833ba6622f4">setValue</a> (int16_t val, boolean doDraw)</td></tr>
+<tr class="memdesc:a976cb334a968c2aac3f65833ba6622f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current value with optional update.  <a href="#a976cb334a968c2aac3f65833ba6622f4">More...</a><br /></td></tr>
+<tr class="separator:a976cb334a968c2aac3f65833ba6622f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6403e8d54c06d465f6a38ecaeab83103"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_micro_view_widget.html#a6403e8d54c06d465f6a38ecaeab83103">getValLen</a> ()</td></tr>
 <tr class="memdesc:a6403e8d54c06d465f6a38ecaeab83103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the print length of the value.  <a href="#a6403e8d54c06d465f6a38ecaeab83103">More...</a><br /></td></tr>
 <tr class="separator:a6403e8d54c06d465f6a38ecaeab83103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,8 +351,37 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>maxValLen</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>Set current value. </p>
-<p>The current value of the widget is set to the variable passed in. </p>
+<p>Set current value and update widget. </p>
+<p>The current value of the widget is set to the variable passed in and the widget is drawn with the new value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a976cb334a968c2aac3f65833ba6622f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MicroViewWidget::setValue </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>doDraw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set current value with optional update. </p>
+<p>The current value of the widget is set to the variable passed in. The widget is drawn with the new value if the doDraw argument is true. </p>
 
 </div>
 </div>
